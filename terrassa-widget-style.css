@@ -1,4 +1,4 @@
-/* === РЁСЂРёС„С‚ Arsenal SC (Google Fonts) === */
+/* === Шрифт Arsenal SC (Google Fonts) === */
 @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 #start-widget, .l-start__content, .l-start__content *,
@@ -7,45 +7,109 @@
     font-family: 'Arsenal SC', sans-serif !important;
 }
 
-/* === Р¤РѕСЂРјР° РїРѕРёСЃРєР° === */
-.l-start__content { background-color: #FFFCF5 !important; }
-.b-start__field { background-color: #FFFFFF !important; border-radius: 6px; }
-.b-select-ghost { background-color: #FFFFFF !important; }
-.b-start__field-label { color: #936012; font-weight: 700; }
+/* === Форма поиска === */
+.l-start__content {
+    background-color: #FFFCF5 !important;
+}
+
+.b-start__field {
+    background-color: #FFFFFF !important;
+    border-radius: 6px;
+}
+
+.b-select-ghost {
+    background-color: #FFFFFF !important;
+}
+
+.b-start__field-label {
+    color: #936012;
+    font-weight: 700;
+}
+
 .s-btn.s-btn--primary {
     background-color: #936012 !important;
     border-color: #936012 !important;
     color: #FFFCF5 !important;
 }
-.s-btn.s-btn--primary:hover { background-color: #7a4f0f !important; }
 
-/* === РљР°Р»РµРЅРґР°СЂСЊ (jQuery UI datepicker) === */
+.s-btn.s-btn--primary:hover {
+    background-color: #7a4f0f !important;
+}
+
+/* === Календарь === */
 #ui-datepicker-div.ui-datepicker {
     background-color: #FFFCF5 !important;
     border: 1px solid #936012 !important;
 }
-.ui-datepicker-header { background-color: #936012 !important; color: #FFFCF5 !important; border: none !important; }
-.ui-datepicker-title, .ui-datepicker-month, .ui-datepicker-year { color: #FFFCF5 !important; }
-.ui-datepicker-prev .ui-icon, .ui-datepicker-next .ui-icon { color: #FFFCF5 !important; }
-.ui-datepicker-calendar th span { color: #936012 !important; }
+
+.ui-datepicker-header {
+    background-color: #936012 !important;
+    color: #FFFCF5 !important;
+    border: none !important;
+}
+
+.ui-datepicker-title,
+.ui-datepicker-month,
+.ui-datepicker-year {
+    color: #FFFCF5 !important;
+}
+
+.ui-datepicker-prev .ui-icon,
+.ui-datepicker-next .ui-icon {
+    color: #FFFCF5 !important;
+}
+
+.ui-datepicker-calendar th span {
+    color: #936012 !important;
+}
+
 .ui-datepicker-calendar td a.ui-state-default {
     background-color: #FFFFFF !important;
     color: #333 !important;
     border: none !important;
     text-align: center;
 }
-.ui-datepicker-calendar td.ui-datepicker-other-month a { color: #ccc !important; background-color: transparent !important; }
-.ui-datepicker-calendar td.ui-datepicker-week-end a { background-color: #FFFCF5 !important; }
-.ui-datepicker-calendar td.ui-datepicker-current-day a,
-.ui-datepicker-calendar td a.ui-state-active { background-color: #936012 !important; color: #FFFCF5 !important; }
-.ui-datepicker-calendar td a.ui-state-default:hover { background-color: #7a4f0f !important; color: #FFFCF5 !important; }
 
-/* === РџРѕРїР°Рї "Р“РѕСЃС‚Рё" === */
-.l-popup-container--rooms { background-color: #FFFCF5 !important; }
-.b-roomitem__title, .b-roomitem__field--label { color: #936012; }
+.ui-datepicker-calendar td.ui-datepicker-other-month a {
+    color: #ccc !important;
+    background-color: transparent !important;
+}
+
+.ui-datepicker-calendar td.ui-datepicker-week-end a {
+    background-color: #FFFCF5 !important;
+}
+
+.ui-datepicker-calendar td.ui-datepicker-current-day a,
+.ui-datepicker-calendar td a.ui-state-active {
+    background-color: #936012 !important;
+    color: #FFFCF5 !important;
+}
+
+.ui-datepicker-calendar td a.ui-state-default:hover {
+    background-color: #7a4f0f !important;
+    color: #FFFCF5 !important;
+}
+
+/* === Попап "Гости" === */
+.l-popup-container--rooms {
+    background-color: #FFFCF5 !important;
+}
+
+.b-roomitem__title,
+.b-roomitem__field--label {
+    color: #936012;
+}
+
+/* === Счётчик гостей === */
+.b-input-spinner {
+    display: flex !important;
+    align-items: stretch !important;
+    width: 100% !important;
+}
+
 .b-input-spinner input[data-ruler="quantity"] {
     background-color: #FFFFFF !important;
-    text-align: center;
+    text-align: center !important;
     border: 1px solid #936012 !important;
     width: 45px !important;
     min-width: 45px !important;
@@ -53,11 +117,25 @@
     flex: 0 0 45px !important;
     box-sizing: border-box !important;
 }
+
 .b-input-spinner button {
     background-color: #FFFFFF !important;
     border: 1px solid #936012 !important;
     color: #936012 !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
 }
-.b-input-spinner button:hover { background-color: #936012 !important; color: #FFFCF5 !important; }
-.s-btn--addroom { color: #936012 !important; }
-.select2-selection { background-color: #FFFFFF !important; border: 1px solid #936012 !important; }
+
+.b-input-spinner button:hover {
+    background-color: #936012 !important;
+    color: #FFFCF5 !important;
+}
+
+.s-btn--addroom {
+    color: #936012 !important;
+}
+
+.select2-selection {
+    background-color: #FFFFFF !important;
+    border: 1px solid #936012 !important;
+}
