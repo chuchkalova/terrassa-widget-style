@@ -8,23 +8,10 @@
 }
 
 /* === Форма поиска === */
-.l-start__content {
-    background-color: #FFFCF5 !important;
-}
-
-.b-start__field {
-    background-color: #FFFFFF !important;
-    border-radius: 6px;
-}
-
-.b-select-ghost {
-    background-color: #FFFFFF !important;
-}
-
-.b-start__field-label {
-    color: #936012;
-    font-weight: 700;
-}
+.l-start__content { background-color: #FFFCF5 !important; }
+.b-start__field { background-color: #FFFFFF !important; border-radius: 6px; }
+.b-select-ghost { background-color: #FFFFFF !important; }
+.b-start__field-label { color: #936012; font-weight: 700; }
 
 .s-btn.s-btn--primary {
     background-color: #936012 !important;
@@ -100,15 +87,16 @@
     color: #936012;
 }
 
+/* Счётчики гостей — без вертикальных рамок */
 .b-input-spinner input[data-ruler="quantity"] {
     background-color: #FFFFFF !important;
     text-align: center;
-    border: 1px solid #936012;
+    border: none !important;
 }
 
 .b-input-spinner button {
     background-color: #FFFFFF !important;
-    border: 1px solid #936012 !important;
+    border: none !important;
     color: #936012 !important;
 }
 
