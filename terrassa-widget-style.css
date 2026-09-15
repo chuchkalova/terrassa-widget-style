@@ -36,7 +36,7 @@
     background-color: #7a4f0f !important;
 }
 
-/* === Календарь === */
+/* === Календарь (jQuery UI datepicker) === */
 #ui-datepicker-div.ui-datepicker {
     background-color: #FFFCF5 !important;
     border: 1px solid #936012 !important;
@@ -100,30 +100,16 @@
     color: #936012;
 }
 
-/* === Счётчик гостей === */
-.b-input-spinner {
-    display: flex !important;
-    align-items: stretch !important;
-    width: 100% !important;
-}
-
 .b-input-spinner input[data-ruler="quantity"] {
     background-color: #FFFFFF !important;
-    text-align: center !important;
-    border: 1px solid #936012 !important;
-    width: 45px !important;
-    min-width: 45px !important;
-    max-width: 45px !important;
-    flex: 0 0 45px !important;
-    box-sizing: border-box !important;
+    text-align: center;
+    border: 1px solid #936012;
 }
 
 .b-input-spinner button {
     background-color: #FFFFFF !important;
     border: 1px solid #936012 !important;
     color: #936012 !important;
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
 }
 
 .b-input-spinner button:hover {
