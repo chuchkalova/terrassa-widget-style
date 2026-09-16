@@ -90,37 +90,30 @@
 /* Счётчики гостей — рамка вокруг блока, воздух между кнопками и цифрой */
 .b-input-spinner {
     border: 1px solid #936012 !important;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 12px;
-}
-
-.b-input-spinner input[data-ruler="quantity"] {
-    background-color: transparent !important;
-    border: none !important;
-    text-align: center;
-    width: 40px;
-    flex: 0 0 auto;
+    padding: 10px 16px;
 }
 
 .b-input-spinner button {
     background-color: transparent !important;
     border: none !important;
     color: #936012 !important;
-    flex: 0 0 auto;
+    width: 100%;
+}
+
+.b-input-spinner button[data-spin="down"] { text-align: left; }
+.b-input-spinner button[data-spin="up"] { text-align: right; }
+
+.b-input-spinner input[data-ruler="quantity"] {
+    background-color: transparent !important;
+    border: none !important;
+    text-align: center;
+    width: 100%;
 }
 
 .b-input-spinner button:hover {
     background-color: #936012 !important;
     color: #FFFCF5 !important;
-}
-
-.s-btn--addroom {
-    color: #936012 !important;
-}
-
-.select2-selection {
-    background-color: #FFFFFF !important;
-    border: 1px solid #936012 !important;
 }
