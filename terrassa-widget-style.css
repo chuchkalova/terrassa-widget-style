@@ -91,7 +91,7 @@
 .b-input-spinner input[data-ruler="quantity"] {
     background-color: #FFFFFF !important;
     text-align: center;
-    border: none !important;
+    border: 1px solid #936012;
 }
 
 .b-input-spinner button {
