@@ -87,17 +87,28 @@
     color: #936012;
 }
 
-/* Счётчики гостей — без вертикальных рамок */
+/* Счётчики гостей — рамка вокруг блока, воздух между кнопками и цифрой */
+.b-input-spinner {
+    border: 1px solid #936012 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
 .b-input-spinner input[data-ruler="quantity"] {
-    background-color: #FFFFFF !important;
+    background-color: transparent !important;
+    border: none !important;
     text-align: center;
-    border: 1px solid #936012;
+    width: 40px;
+    flex: 0 0 auto;
 }
 
 .b-input-spinner button {
-    background-color: #FFFFFF !important;
+    background-color: transparent !important;
     border: none !important;
     color: #936012 !important;
+    flex: 0 0 auto;
 }
 
 .b-input-spinner button:hover {
