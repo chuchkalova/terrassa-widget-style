@@ -89,16 +89,24 @@
 
 /* Счётчики гостей — рамка вокруг блока, воздух между кнопками и цифрой */
 .b-input-spinner {
-    border: 1px solid #936012 !important;
-    padding: 8px 16px;
+    border: 1px solid rgba(147, 96, 18, 0.35) !important;
+    border-radius: 4px;
+    padding: 2px 14px;
+    box-sizing: border-box;
 }
 
 .b-input-spinner input[data-ruler="quantity"] {
     background-color: transparent !important;
     border: none !important;
     text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .b-input-spinner button {
     color: #936012 !important;
+}
+
+.b-input-spinner button:hover {
+    color: #7a4f0f !important;
 }
